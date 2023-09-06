@@ -31,4 +31,4 @@ Suitable range for Np is 2 to 10.
 
 
 ### NOTE
-The training is very time and energy consuming, make sure you have enough time and battery:)
+The training is very time and energy consuming, make sure you have enough time and connected to power:)
