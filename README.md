@@ -1,12 +1,14 @@
 # Multi_Spintronics_Board_for_Audio_Tagging
-Based on the SpinTorch code in https://github.com/a-papp/SpinTorch. I have made changes to the code and changed the initial single-board system to multi-board system. Dataloader was included together with more data generation file.
+Based on the SpinTorch code in https://github.com/a-papp/SpinTorch. 
 
+I have made changes to the code and changed the initial single-board system to multi-board system. Dataloader was included together with more data generation file.
 
+### Data
 Audio tag task data are avaialble on Kaggle: https://www.kaggle.com/competitions/freesound-audio-tagging-2019
 
 With more explanation in: https://www.kaggle.com/code/maxwell110/beginner-s-guide-to-audio-data-2
 
-
+### How to Run the simulation
 Please save data in separate folder called 'input'
 
 But remember to keep all files and folders included here, together with this 'input' folder in the same directory
@@ -18,5 +20,5 @@ By running the Audio_Single_Board.py file, single-spintronics board training wil
 By running the Audio_Double_Board.py file, double-spintronics board training will begin.
 
 
-
+### NOTE
 The training is very time and energy consuming, make sure you have enough time and battery:)
