@@ -1,16 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 # #  SpinTorch
-# 1. Have continuous source signal with Gaussian Noise
-# 2. Have 10%-50% threshold line for intensity plots
-# 3. Added FFT for Gaussian Noise
-# 4. Add Testing, training and validation data and accuracy test
-# 5. Add KNN classifier after CNN to better distinguish between wanted and unwanted signals 
-# 6. Try simulating drone signal processing by firstly only reacting to wanted signals
-
-# V3: Limit linear weighting to even smaller ranges near 0.0002
-# V4: change signal input range to [10,70]
-# V5: increase probes on board 1 to increase number of hidden neurons for better performance 
 
 # In[1]: Parameters to change
 import numpy as np
