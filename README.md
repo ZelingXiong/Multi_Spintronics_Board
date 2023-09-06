@@ -16,3 +16,7 @@ Also, remember to change your_path on line 20 in each file to your directory pat
 By running the Audio_Single_Board.py file, single-spintronics board training will begin.
 
 By running the Audio_Double_Board.py file, double-spintronics board training will begin.
+
+
+
+The training is very time and energy consuming, make sure you have enough time and battery:)
