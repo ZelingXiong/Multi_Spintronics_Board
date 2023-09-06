@@ -1,4 +1,4 @@
-# Multi_Spintronics_Board_for_Audio_Tagging
+# Multi_Spintronics_Board
 Based on the SpinTorch code in https://github.com/a-papp/SpinTorch. 
 
 I have made changes to the code and changed the initial single-board system to multi-board system. Dataloader was included together with more data generation file.
