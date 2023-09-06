@@ -19,6 +19,10 @@ By running the Audio_Single_Board.py file, single-spintronics board training wil
 
 By running the Audio_Double_Board.py file, double-spintronics board training will begin.
 
+Np in each file represents number of different signals included in the classification task.
+
+Suitable range for Np is 2 to 10.
+
 
 ### NOTE
 The training is very time and energy consuming, make sure you have enough time and battery:)
