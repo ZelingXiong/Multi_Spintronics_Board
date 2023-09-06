@@ -8,6 +8,8 @@ Audio tag task data are avaialble on Kaggle: https://www.kaggle.com/competitions
 
 With more explanation in: https://www.kaggle.com/code/maxwell110/beginner-s-guide-to-audio-data-2
 
+The data.py file can be used to generate simpler multi-freuqnecy RF signals in sinusoidal wave forms.
+
 ### How to Run the simulation
 Please save data in separate folder called 'input'
 
@@ -15,9 +17,13 @@ But remember to keep all files and folders included here, together with this 'in
 
 Also, remember to change your_path on line 20 in each file to your directory path. 
 
-By running the Audio_Single_Board.py file, single-spintronics board training will begin.
+1) By running the Audio_Single_Board.py file, single-spintronics board training for audio tagging task will begin.
 
-By running the Audio_Double_Board.py file, double-spintronics board training will begin.
+2) By running the Audio_Double_Board.py file, double-spintronics board training for audio tagging task will begin.
+
+3) By runnning the RF_single_board.py, single-spintronics board training for multi-frequency RF signal classification task will begin.
+
+4) By runnning the RF_double_board.py, double-spintronics board training for multi-frequency RF signal classification task will begin.
 
 Np in each file represents number of different signals included in the classification task.
 
