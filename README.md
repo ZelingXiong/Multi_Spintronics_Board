@@ -5,10 +5,14 @@ I have made changes to the code and changed the initial single-board system to m
 
 ### Data
 Audio tag task data are avaialble on Kaggle: https://www.kaggle.com/competitions/freesound-audio-tagging-2019
+![original_plot](https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/d69c90e2-ec17-4e1b-9246-f5b0cfcd0671)
+![Final_Plot](https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/2a6fab37-d619-451d-bde3-73079d9c9c16)
 
 With more explanation in: https://www.kaggle.com/code/maxwell110/beginner-s-guide-to-audio-data-2
 
 Multi-freuqnecy RF signals are generated using data.py, they are simpler than audio data.
+![ABABAsource_signal](https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/2f2e4dc1-5b41-47eb-a458-e16e03d6c7bd)
+![ABABsource_FOURIER](https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/2ac446a0-1a94-45ae-9d1e-366e00d2cb5b)
 
 ### How to Run the simulation
 Please save audio data in separate folder called 'input'
@@ -28,6 +32,7 @@ Also, remember to change your_path on line 20 in each file to your directory pat
 Np in each file represents number of different signals included in the classification task.
 
 Suitable range for Np is 2 to 10.
+![snapshot_time1100_amplitude 1 00X1](https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/df24cc1b-74cd-418d-b661-7abcc823d815)
 
 
 ### NOTE
