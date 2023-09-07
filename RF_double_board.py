@@ -14,6 +14,7 @@
 # In[1]:      Parameters to change
 your_path = '/rds/general/user/zx719/home/3Layer_V2'
 #your_path = '/home/zx719/Documents/MresMLBD/MResProject/Double_Board_V2'
+
 #excitation field amplitude (T)
 Bt = 1e-3 
 Np = 2 #number of signal types
@@ -82,9 +83,9 @@ get_ipython().run_line_magic('cd', '$your_path')
 import spintorch
 import numpy as np
 from spintorch.utils import tic, toc, stat_cuda
-from spintorch.plot import wave_integrated, wave_snapshot, Intensity_time
+from spintorch.DB_plot import wave_integrated, wave_snapshot, Intensity_time
 from spintorch.data import sample_generation
-from spintorch.solver import MyLinearLayer
+from spintorch.DB_solver import MyLinearLayer
 
 import warnings
 warnings.filterwarnings("ignore", message=".*Casting complex values to real.*")
@@ -165,8 +166,8 @@ class Net(nn.Module):
         super().__init__()
         
         '''' imput different layers '''
-        self.conv1 = spintorch.MMSolver(geom1, dt, [src1], probes1)
-        self.conv2 = spintorch.MMSolver(geom2, dt, src2, probes2)
+        self.conv1 = spintorch.DB_solver.MMSolver(geom1, dt, [src1], probes1)
+        self.conv2 = spintorch.DB_solver.MMSolver(geom2, dt, src2, probes2)
         self.linear = MyLinearLayer(in_features = layer1_Np, out_features = layer1_Np, weight_range=scaling)
 
     def forward(self, x):
@@ -336,8 +337,8 @@ for epoch in range(epoch_init+1, epoch_max):
   lr_list.append(optimizer.param_groups[0]['lr'])
   loss_iter.append(avg_loss)
   train_accu.append(train_accuracy)
-  spintorch.plot.plot_loss(loss_iter, analysisdir)
-  spintorch.plot.plot_accuracy(train_accu, analysisdir)
+  spintorch.DB_plot.plot_loss(loss_iter, analysisdir)
+  spintorch.DB_plot.plot_accuracy(train_accu, analysisdir)
   
   #print("epoch %d finished: -- Average Loss: %.4f" % (epoch, avg_loss))
   print('Epoch {}/{} \t average_train_loss={:.4f} \t train_accuracy={:.4f} \t '.format(
@@ -356,13 +357,13 @@ for epoch in range(epoch_init+1, epoch_max):
   if epoch % 10 == 9 or epoch == 0:
     # plot output bars
     for i in range(len(u)):   
-      spintorch.plot.plot_output(u[i:i+1][0,],OUTPUTS[i].numpy(),i,BATCH,epoch, plotdir,thresh_line)
+      spintorch.DB_plot.plot_output(u[i:i+1][0,],OUTPUTS[i].numpy(),i,BATCH,epoch, plotdir,thresh_line)
     # geometry and wave propagation plots
     if model.retain_history:  
       with torch.no_grad():
         layer1 = model.layer(0)
         layer2 = model.layer(1)
-        spintorch.plot.geometry([layer1,layer2], epoch=epoch, plotdir=plotdir)
+        spintorch.DB_plot.geometry([layer1,layer2], epoch=epoch, plotdir=plotdir)
         mz1 = torch.stack(layer1.m_history, 1)[0,:,2,]-layer1.m0[0,2,].unsqueeze(0).cpu()
         mz2 = torch.stack(layer2.m_history, 1)[0,:,2,]-layer2.m0[0,2,].unsqueeze(0).cpu()
         mz = [mz1[timesteps-1],mz2[timesteps-1]]
@@ -441,7 +442,7 @@ for BATCH, data in enumerate(test_loader, 0):
     print('knn regressor prediction',kgpred)
 
     for i in range(len(u_test)):
-        spintorch.plot.plot_output(u_test[i:i+1][0,],OUTPUTS_test[i].numpy(),i,BATCH,0, testdir,thresh_line)
+        spintorch.DB_plot.plot_output(u_test[i:i+1][0,],OUTPUTS_test[i].numpy(),i,BATCH,0, testdir,thresh_line)
 
     #LOSS CALCULATION
     loss = loss_func(u_test, OUTPUTS_test,show=True,mean=True,fnc_used=fnc_used,apply_softmax=False)
@@ -478,7 +479,7 @@ if model.retain_history:
         for j in range(len(u_test)):
             layer1 = model.layer(0)
             layer2 = model.layer(1)
-            spintorch.plot.geometry([layer1,layer2], epoch=0, plotdir=testdir)
+            spintorch.DB_plot.geometry([layer1,layer2], epoch=0, plotdir=testdir)
             mz1 = torch.stack(layer1.m_history, 1)[0,:,2,]-layer1.m0[0,2,].unsqueeze(0).cpu()
             mz2 = torch.stack(layer2.m_history, 1)[0,:,2,]-layer2.m0[0,2,].unsqueeze(0).cpu()
             mz = [mz1[timesteps-1],mz2[timesteps-1]]
