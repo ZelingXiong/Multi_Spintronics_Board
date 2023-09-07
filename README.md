@@ -11,8 +11,8 @@ Audio tag task data are avaialble on Kaggle: https://www.kaggle.com/competitions
 With more explanation in: https://www.kaggle.com/code/maxwell110/beginner-s-guide-to-audio-data-2
 
 Multi-freuqnecy RF signals are generated using data.py, they are simpler than audio data.
-<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/2f2e4dc1-5b41-47eb-a458-e16e03d6c7bd" width="400" height="250">
-<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/2ac446a0-1a94-45ae-9d1e-366e00d2cb5b" width="400" height="250">
+<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/2f2e4dc1-5b41-47eb-a458-e16e03d6c7bd" width="400" height="300">
+<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/2ac446a0-1a94-45ae-9d1e-366e00d2cb5b" width="400" height="300">
 
 
 ### How to Run the simulation
@@ -34,7 +34,7 @@ Np in each file represents number of different signals included in the classific
 
 Suitable range for Np is 2 to 10.
 
-<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/df24cc1b-74cd-418d-b661-7abcc823d815" width="400" height="250">
+<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/df24cc1b-74cd-418d-b661-7abcc823d815" width="500" height="250">
 
 
 ### NOTE
