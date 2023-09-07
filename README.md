@@ -6,7 +6,7 @@ I have made changes to the code and changed the initial single-board system to m
 ### Data
 Audio tag task data are avaialble on Kaggle: https://www.kaggle.com/competitions/freesound-audio-tagging-2019
 
-<img src= ![original_plot](https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/d69c90e2-ec17-4e1b-9246-f5b0cfcd0671) width="300" height="200">
+<img src= "![original_plot](https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/d69c90e2-ec17-4e1b-9246-f5b0cfcd0671)" width="300" height="200">
 
 ![Final_Plot](https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/2a6fab37-d619-451d-bde3-73079d9c9c16)
 
