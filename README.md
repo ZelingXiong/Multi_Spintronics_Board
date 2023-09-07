@@ -8,10 +8,10 @@ Audio tag task data are avaialble on Kaggle: https://www.kaggle.com/competitions
 
 With more explanation in: https://www.kaggle.com/code/maxwell110/beginner-s-guide-to-audio-data-2
 
-The data.py file can be used to generate simpler multi-freuqnecy RF signals in sinusoidal wave forms.
+Multi-freuqnecy RF signals are generated using data.py, they are simpler than audio data.
 
 ### How to Run the simulation
-Please save data in separate folder called 'input'
+Please save audio data in separate folder called 'input'
 
 But remember to keep all files and folders included here, together with this 'input' folder in the same directory
 
