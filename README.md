@@ -9,8 +9,8 @@ Audio tag task data are avaialble on Kaggle:
 
 https://www.kaggle.com/competitions/freesound-audio-tagging-2019
 
-<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/blob/main/Pictures/original_plot.png" width="390" height="260">
-<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/blob/main/Pictures/Final_Plot.png" width="390" height="260">
+<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/blob/main/Pictures/original_plot.png" width="380" height="260">
+<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/blob/main/Pictures/Final_Plot.png" width="380" height="260">
 
 With more explanation in: https://www.kaggle.com/code/maxwell110/beginner-s-guide-to-audio-data-2
 
