@@ -8,6 +8,7 @@ I have made changes to the code and changed the initial single-board system to m
 Audio tag task data are avaialble on Kaggle: 
 
 https://www.kaggle.com/competitions/freesound-audio-tagging-2019
+
 <img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/blob/main/Pictures/original_plot.png" width="380" height="260">
 <img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/blob/main/Pictures/Final_Plot.png" width="380" height="260">
 
