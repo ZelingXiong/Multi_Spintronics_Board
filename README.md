@@ -9,15 +9,15 @@ Audio tag task data are avaialble on Kaggle:
 
 https://www.kaggle.com/competitions/freesound-audio-tagging-2019
 
-<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/d69c90e2-ec17-4e1b-9246-f5b0cfcd0671" width="400" height="250">
-<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/2a6fab37-d619-451d-bde3-73079d9c9c16" width="400" height="250">
+<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/blob/main/Pictures/original_plot.png" width="400" height="250">
+<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/blob/main/Pictures/Final_Plot.png" width="400" height="250">
 
 With more explanation in: https://www.kaggle.com/code/maxwell110/beginner-s-guide-to-audio-data-2
 
 ### Multi-freuqnecy RF signals
 Multi-freuqnecy RF signals are generated using data.py, they are simpler than audio data.
-<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/2f2e4dc1-5b41-47eb-a458-e16e03d6c7bd" width="400" height="370">
-<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/2ac446a0-1a94-45ae-9d1e-366e00d2cb5b" width="400" height="370">
+<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/blob/main/Pictures/ABABAsource_signal.png" width="400" height="370">
+<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/blob/main/Pictures/ABABsource_FOURIER.png" width="400" height="370">
 
 
 ## How to Run the simulation
@@ -39,7 +39,7 @@ Np in each file represents number of different signals included in the classific
 
 Suitable range for Np is 2 to 10.
 
-<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/assets/92733114/df24cc1b-74cd-418d-b661-7abcc823d815" width="600" height="250">
+<img src="https://github.com/ZelingXiong/Multi_Spintronics_Board/blob/main/Pictures/snapshot_time1100_amplitude%203.00X1.png" width="600" height="250">
 
 
 ## NOTE
