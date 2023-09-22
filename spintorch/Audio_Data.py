@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+# Audio tag task data are avaialble on Kaggle: https://www.kaggle.com/competitions/freesound-audio-tagging-2019
 # Base on: https://www.kaggle.com/code/maxwell110/beginner-s-guide-to-audio-data-2
 
 # In[1]: 
